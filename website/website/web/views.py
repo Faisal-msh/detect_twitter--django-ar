@@ -4,7 +4,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse('<h1> Haaaaaaaaaaaay fasoly! </h1>')
-
+    return render(request, 'web/index.html', {'title':'Home'},)
 
 # Create your views here.
+
+
+
+
+
+
